@@ -1,0 +1,77 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sun Dec 25 14:21:21 2016
+| Host         : EALAB01 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file MorseCode_control_sets_placed.rpt
+| Design       : MorseCode
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    24 |
+| Minimum Number of register sites lost to control set restrictions |    94 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              75 |           45 |
+| No           | No                    | Yes                    |               5 |            2 |
+| No           | Yes                   | No                     |              43 |           14 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              67 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+--------------------------+--------------------------+------------------+----------------+
+|                   Clock Signal                  |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------------------------------+--------------------------+--------------------------+------------------+----------------+
+|  deneme/red[3]_0                                |                          | red_reg[3]_i_3_n_0       |                1 |              1 |
+|  deneme/o_reg_i_1_n_0                           |                          |                          |                1 |              1 |
+|  deneme/c_OBUF                                  | i[3]_i_1_n_0             |                          |                2 |              4 |
+|  deneme/harf_reg[4]_i_2_n_0                     |                          |                          |                2 |              5 |
+|  deneme/FSM_sequential_nextstate_reg[4]_i_2_n_0 |                          |                          |                4 |              5 |
+|  newClk/clk_out                                 |                          | clr_IBUF                 |                2 |              5 |
+|  sentence_reg[0][4]_i_1_n_0                     |                          |                          |                4 |              5 |
+|  sentence_reg[10][4]_i_1_n_0                    |                          |                          |                4 |              5 |
+|  sentence_reg[1][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  sentence_reg[2][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  sentence_reg[3][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  sentence_reg[4][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  sentence_reg[5][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  sentence_reg[6][4]_i_1_n_0                     |                          |                          |                2 |              5 |
+|  sentence_reg[7][4]_i_1_n_0                     |                          |                          |                4 |              5 |
+|  sentence_reg[8][4]_i_1_n_0                     |                          |                          |                2 |              5 |
+|  sentence_reg[9][4]_i_1_n_0                     |                          |                          |                3 |              5 |
+|  clk_IBUF_BUFG                                  |                          |                          |                4 |              9 |
+|  pxclk[1]                                       |                          | hc[9]_i_1_n_0            |                5 |             10 |
+|  pxclk[1]                                       | hc[9]_i_1_n_0            | vc[9]_i_1_n_0            |                5 |             10 |
+|  clk_IBUF_BUFG                                  | butc/count[0]_i_2__1_n_0 | butc/count[0]_i_1__1_n_0 |                5 |             19 |
+|  clk_IBUF_BUFG                                  | butb/count[0]_i_2__0_n_0 | butb/count[0]_i_1__0_n_0 |                5 |             19 |
+|  clk_IBUF_BUFG                                  | buta/count[0]_i_2_n_0    | buta/count[0]_i_1_n_0    |                5 |             19 |
+|  clk_IBUF_BUFG                                  |                          | newClk/clear             |                8 |             32 |
++-------------------------------------------------+--------------------------+--------------------------+------------------+----------------+
+
+

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Dec 24 01:47:03 2016
+# Process ID: 1508
+# Log file: F:/23.12.2016/32/ljk/MorseNew/vivado.log
+# Journal file: F:/23.12.2016/32/ljk/MorseNew\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/23.12.2016/32/ljk/MorseNew/MorseNew.xpr
